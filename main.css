@@ -1,0 +1,283 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    /* background: #C65B7C; */
+    background: #50009f;
+    color: #3f3f3f;
+    padding-top: 100vh;
+}
+
+.large-hero {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    z-index: -1;
+}
+
+.large-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navigation {
+    /* background: #f1f1f1e0; */
+    color: #fff;
+    padding: 15px;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    width: 170px !important;
+}
+
+.nav-links {
+    position: relative;
+    top: 4px;
+}
+
+.menu-item {
+    margin-right: 25px;
+    font-size: 14px;
+    font-weight: 700;
+    transition: border 140ms;
+    padding: 7px 1px 2px 1px;
+}
+
+.menu-item:hover {
+    cursor: pointer;
+    border-bottom: 2.5px solid #fff;
+    transition: border 110ms;
+}
+
+.dropdown-toggle:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.text-over-img {
+    color: #efefef;
+    position: absolute;
+    top: 35vh;
+    left: 10vw;
+    /* z-index: -1; */
+}
+
+.btn-primary {
+    background: #660fa0f8;
+    border-color: #660fa0f8;
+}
+
+.btn-primary:hover {
+    background: #880fa0;
+    border-color: #880fa0;
+}
+
+.btn-secondary {
+    color: #fff;
+    background: #7526aaf8;
+    border-color: #7526aaf8;
+}
+
+.btn-secondary:hover {
+    color: #fff;
+    background: #5c188af8;
+    border-color: #5c188af8;
+}
+
+.btn-outline-primary {
+    border-color: #4b286d;
+    color: #4b286d;
+}
+
+.btn-outline-primary:hover {
+    border-color: #4b286d;
+    background: #4b286d;
+    color: #efefef;
+}
+
+.btn-outline-secondary {
+    border-color: #efefef;
+    color: #efefef;
+}
+
+.btn-outline-secondary:hover {
+    border-color: #660fa0;
+    background: #660fa0;
+    color: #efefef;
+}
+
+.back-white {
+    background: #efefef;
+    z-index: 2;
+}
+
+.content {
+    z-index: 3;
+}
+
+.content img {
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 44px;
+}
+
+h4 {
+    font-size: 34px;
+}
+
+.colored-title {
+    color: #9e009a;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.light-purple-color {
+    color: #94098f;
+}
+
+.footer-content {
+    color: #efefef;
+    padding: 40px;
+}
+
+.socials {
+    font-size: 2rem;
+}
+
+.social {
+    padding-bottom: 4px;
+}
+
+.social:hover {
+    cursor: pointer;
+    border-bottom: 1.5px solid #efefef;
+}
+
+.footer-link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.dark-text {
+    color: #3f3f3f !important;
+}
+
+.dark-text .menu-item:hover {
+    border-bottom: 2.5px solid #3f3f3f;
+}
+
+.main-btn {
+    background: #fafafa;
+    border: 1px solid #fafafa;
+    padding: 14px 25px 14px 25px;
+    border-radius: 30px;
+    color: #3d00a0;
+    font-weight: 700;
+    transition: all 300ms;
+}
+
+.main-btn:hover {
+    background: #a7009a;
+    color: #fafafa;
+    border: 1px solid #a7009a;
+    transition: all 300ms;
+}
+
+.main-btn-colored {
+    background: #a7009a;
+    border: 1px solid #a7009a;
+    padding: 14px 25px 14px 25px;
+    border-radius: 30px;
+    color: #fafafa;
+    font-weight: 700;
+    transition: all 300ms;
+}
+
+.main-btn-colored:hover {
+    background: #bd15af;
+    border: 1px solid #bd15af;
+    transition: all 300ms;
+}
+
+.secondary-btn {
+    background: #fafafa;
+    border: 1px solid #fafafa;
+    padding: 14px 25px 14px 25px;
+    border-radius: 30px;
+    color: #3d00a0;
+    font-weight: 700;
+    transition: all 300ms;
+}
+
+.secondary-btn:hover {
+    background: #5621aa;
+    color: #fafafa;
+    border: 1px solid #5621aa;
+    transition: all 300ms;
+}
+
+.form-input {
+    display: inline-block;
+    background: rgba(0, 0, 0, 0);
+    padding: 7px 20px 7px 20px;
+    border: 1px solid #fafafa;
+    border-radius: 30px;
+    color: #fafafa;
+    width: 100%;
+    font-size: 14px;
+}
+
+.form-input:focus {
+    outline: 0 !important;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #fafafa;
+    opacity: 1;
+    font-size: 14px;
+    /* Firefox */
+}
+
+.form-btn {
+    background: #fafafa;
+    border: 1px solid #fafafa;
+    padding: 7px 25px 7px 25px;
+    border-radius: 30px;
+    color: #3d00a0;
+    font-weight: 700;
+    transition: all 300ms;
+    font-size: 14px;
+    /* margin-left: 15px; */
+}
+
+.form-btn:hover {
+    cursor: pointer;
+    background: #5621aa;
+    color: #fafafa;
+    border-color: #5621aa;
+    transition: all 300ms;
+}
+
+.form-btn:focus {
+    outline: 0 !important;
+}
