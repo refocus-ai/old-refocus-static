@@ -3,8 +3,9 @@
 This is the repository for the RefocusAI static website.
 
 This website will contain the following pages:
+
 - Home page ✅
-- About page ⏳
+- About page ✅
 - Contact page ⏳
 - Pricing page ⏳
 - Demo page ⏳

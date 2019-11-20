@@ -4,7 +4,6 @@ body {
     /* background: #C65B7C; */
     background: #50009f;
     color: #3f3f3f;
-    padding-top: 100vh;
 }
 
 .large-hero {
@@ -56,9 +55,12 @@ body {
     transition: border 110ms;
 }
 
-.dropdown-toggle:hover {
-    cursor: pointer;
-    text-decoration: underline;
+.menu-item a {
+    color: #fff;
+}
+
+.menu-item a:hover {
+    text-decoration: none;
 }
 
 .text-over-img {
@@ -69,56 +71,13 @@ body {
     /* z-index: -1; */
 }
 
-.btn-primary {
-    background: #660fa0f8;
-    border-color: #660fa0f8;
-}
-
-.btn-primary:hover {
-    background: #880fa0;
-    border-color: #880fa0;
-}
-
-.btn-secondary {
-    color: #fff;
-    background: #7526aaf8;
-    border-color: #7526aaf8;
-}
-
-.btn-secondary:hover {
-    color: #fff;
-    background: #5c188af8;
-    border-color: #5c188af8;
-}
-
-.btn-outline-primary {
-    border-color: #4b286d;
-    color: #4b286d;
-}
-
-.btn-outline-primary:hover {
-    border-color: #4b286d;
-    background: #4b286d;
-    color: #efefef;
-}
-
-.btn-outline-secondary {
-    border-color: #efefef;
-    color: #efefef;
-}
-
-.btn-outline-secondary:hover {
-    border-color: #660fa0;
-    background: #660fa0;
-    color: #efefef;
-}
-
 .back-white {
     background: #efefef;
     z-index: 2;
 }
 
 .content {
+    margin-top: 100vh;
     z-index: 3;
 }
 
@@ -179,10 +138,16 @@ h4 {
 
 .dark-text {
     color: #3f3f3f !important;
+    transition: border 110ms;
 }
 
-.dark-text .menu-item:hover {
-    border-bottom: 2.5px solid #3f3f3f;
+.dark-text a {
+    color: #3f3f3f !important;
+}
+
+.dark-text:hover {
+    border-bottom: 2.5px solid #3f3f3f !important;
+    transition: border 110ms;
 }
 
 .main-btn {
@@ -280,4 +245,82 @@ h4 {
 
 .form-btn:focus {
     outline: 0 !important;
+}
+
+.light-text {
+    color: #999999;
+}
+
+.underlined {
+    border-bottom: 2.5px solid #a7009a;
+}
+
+.extra-bold {
+    font-weight: 900;
+}
+
+.purple-text {
+    color: #a7009a !important;
+}
+
+.white-text {
+    color: #fafafa !important;
+}
+
+.purple-background {
+    background: #50009f;
+}
+
+
+/** About Page Styling **/
+.mission-text {
+    position: absolute;
+    top: 34vh;
+}
+
+.about-content {
+    margin-top: 100vh;
+    background: #fafafa;
+}
+
+.about-content p {
+    font-size: 15px;
+}
+
+.white-nav {
+    background: #fafafa;
+    border-bottom: 2px solid #a7009a;
+}
+
+hr {
+    width: 20%;
+    color: #a7009a;
+    background: #a7009a;
+    padding: 2px;
+}
+
+.user-content {
+    padding-top: 5%;
+}
+
+.small-hr {
+    width: 100% !important;
+    background: #d1d1d1 !important;
+    padding: 0px !important;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.bio-text {
+    margin-top: 0px;
+    font-size: 12px !important;
+}
+
+.job-title-text {
+    margin-top: 0px;
+}
+
+.person-social {
+    font-size: 22px;
+    margin-top: 5px;
 }
