@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>Contact</title>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-md-12 navigation white-nav">
+            <div class="row">
+                <div class="col-2">
+                    <a href="index.html"><img class="logo" src="images/logo.png" id="nav-logo"></a>
+                </div>
+                <div class="col-7"></div>
+                <div class="col-3 text-right nav-links" id="nav-links">
+                    <span class="menu-item dark-text"><a href="about.html">ABOUT</a></span>
+                    <span class="menu-item dark-text underlined"><a href="contact.html">CONTACT</a></span>
+                    <span class="menu-item dark-text"><a href="register.html">SIGN UP</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Form Container -->
+    <div class="white-back" style="padding-top: 12vh">
+        <div class="row mt-4 mb-4 text-center">
+            <div class="col-md-12 mb-4 pb-2">
+                <h2 class="extra-bold">Let's get in contact.</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <form class="contact-form">
+                    <div class="row">
+                        <div class="col-6">
+                            <label for="firstname">First Name</label>
+                            <input type="text" name="firstname" placeholder="John">
+                        </div>
+                        <div class="col-6">
+                            <label for="lastname">Last Name</label>
+                            <input type="text" name="lastname" placeholder="Doe">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <label for="email">Email Address</label>
+                            <input type="email" name="email" placeholder="john.doe@email.com">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <label for="message">Message</label>
+                            <textarea name="message" placeholder="Enter your message here."></textarea>
+                        </div>
+                    </div>
+                </form>
+                <div class="row mb-4">
+                    <div class="col-6 offset-6"><button class="main-btn-colored" style="width: 100%">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row footer-content align-items-center h-100 purple-background mt-4 pt-4">
+        <div class="col-md-2">
+            <img class="logo" src="images/logo_white.png">
+        </div>
+        <div class="col-md-2" style="font-size: 12px;">
+            <span class="footer-link">ABOUT US</span>
+            <br />
+            <span class="footer-link">CONTACT US</span>
+            <br />
+            <span class="footer-link">TERMS & CONDITIONS</span>
+        </div>
+        <div class="col-md-2 text-center socials">
+            <i class="fab fa-facebook-square mr-3 social"></i>
+            <i class="fab fa-linkedin mr-3 social"></i>
+            <i class="fab fa-instagram mr-3 social"></i>
+            <i class="fab fa-twitter-square social"></i>
+        </div>
+        <div class="col-md-3">
+            <span style="font-weight: 700">Subscribe to our newsletter</span>
+            <div class="row mt-2">
+                <div class="col-8">
+                    <input type="text" class="form-input" placeholder="Email address" aria-label="Email address"
+                        aria-describedby="basic-addon2">
+                </div>
+                <div class="col-2">
+                    <button class="form-btn" style="display: inline-block" type="button">OK</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 text-right" style="font-size: 12px;">
+            <span>Sacramento, CA 95814</span>
+            <br />
+            <span>+1 661 904 0408</span>
+            <br />
+            <span>support@refocusai.com</span>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,8 +1,8 @@
 body {
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
-    /* background: #C65B7C; */
-    background: #50009f;
+    background: #fafafa;
+    /* background: #50009f; */
     color: #3f3f3f;
 }
 
@@ -256,7 +256,7 @@ h4 {
 }
 
 .extra-bold {
-    font-weight: 900;
+    font-weight: 900 !important;
 }
 
 .purple-text {
@@ -269,6 +269,10 @@ h4 {
 
 .purple-background {
     background: #50009f;
+}
+
+.white-back {
+    background: #fafafa;
 }
 
 
@@ -323,4 +327,44 @@ hr {
 .person-social {
     font-size: 22px;
     margin-top: 5px;
+}
+
+
+/** Styling for contact page **/
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus,
+.contact-form button:focus {
+    outline: none;
+    border: 1px solid #a7009a;
+    transition: border 200ms;
+}
+
+.contact-form input {
+    width: 100%;
+    margin-bottom: 3vh;
+    padding: 10px;
+    color: #3f3f3f;
+    border-radius: 8px;
+    border: 1px solid #3f3f3f;
+    transition: border 200ms;
+}
+
+.contact-form textarea {
+    width: 100%;
+    height: 15vh;
+    margin-bottom: 5vh;
+    padding: 10px;
+    color: #3f3f3f;
+    border-radius: 8px;
+    border: 1px solid #3f3f3f;
+    transition: border 200ms;
+}
+
+.contact-form ::placeholder {
+    color: #757575;
+}
+
+.contact-form label {
+    font-weight: 700;
 }
