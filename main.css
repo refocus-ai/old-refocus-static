@@ -145,9 +145,13 @@ h4 {
     color: #3f3f3f !important;
 }
 
-.dark-text:hover {
+.dark-text .menu-item:hover {
     border-bottom: 2.5px solid #3f3f3f !important;
     transition: border 110ms;
+}
+
+.dark-text:hover {
+    border-color: #3f3f3f;
 }
 
 .main-btn {
@@ -275,6 +279,15 @@ h4 {
     background: #fafafa;
 }
 
+a {
+    color: #a7009a;
+}
+
+a:hover {
+    color: #a7009a;
+    text-decoration: underline;
+}
+
 
 /** About Page Styling **/
 .mission-text {
@@ -367,4 +380,88 @@ hr {
 
 .contact-form label {
     font-weight: 700;
+}
+
+/** Styling for Registration page **/
+.registration-content {
+    margin-left: 50vw;
+    width: 50vw;
+    height: 100vh;
+    background: #fafafa;
+    border-top-left-radius: 11px;
+    border-bottom-left-radius: 11px;
+    padding: 50px 45px 25px 45px;
+}
+
+.register-form {
+    margin-top: 5.5vh;
+}
+
+.register-form input:focus,
+.register-form select:focus,
+.register-form textarea:focus,
+.register-form button:focus {
+    outline: none;
+    border: 1px solid #a7009a;
+    transition: border 200ms;
+}
+
+.register-form input {
+    width: 100%;
+    margin-bottom: 3vh;
+    padding: 10px 20px 10px 20px;
+    color: #3f3f3f;
+    border-radius: 25px;
+    border: 1px solid #3f3f3f;
+    transition: border 200ms;
+}
+
+.register-form textarea {
+    width: 100%;
+    height: 15vh;
+    margin-bottom: 5vh;
+    padding: 10px;
+    color: #3f3f3f;
+    border-radius: 8px;
+    border: 1px solid #3f3f3f;
+    transition: border 200ms;
+}
+
+.register-form ::placeholder {
+    color: #757575;
+}
+
+.register-form label {
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+#checkbox {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+#checkbox:hover {
+    cursor: pointer;
+}
+
+.marked {
+    background: #a7009a;
+}
+
+.checkbox-text {
+    position: relative;
+    bottom: 2.5px;
+    margin-left: 8px;
+}
+
+.logo {
+    position: fixed;
+    top: 20px;
+    left: 40px;
 }

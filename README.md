@@ -7,6 +7,7 @@ This website will contain the following pages:
 - Home page ✅
 - About page ✅
 - Contact page ✅
+- Register page ✅
 - Pricing page ⏳
 - Demo page ⏳
 
