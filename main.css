@@ -43,6 +43,7 @@ body {
 
 .nav-link {
     color: #fff !important;
+    padding: 0 !important;
 }
 
 .nav-links {
@@ -50,8 +51,16 @@ body {
     top: 4px;
 }
 
+.nav-item {
+    margin-right: 10px;
+}
+
 .navbar-light .nav-link {
     color: #3f3f3f !important;
+}
+
+.navbar-light .menu-item:hover {
+    border-bottom: 2.5px solid #3f3f3f !important;
 }
 
 .menu-item {
@@ -60,7 +69,7 @@ body {
     font-weight: 700;
     transition: border 140ms;
     padding: 7px 1px 2px 1px;
-    border: 2.5px solid rgba(0, 0, 0, 0);
+    border-bottom: 2.5px solid rgba(0, 0, 0, 0);
 }
 
 .menu-item:hover {
@@ -341,6 +350,10 @@ hr {
     padding-top: 5%;
 }
 
+.user-margin-top {
+    margin-top: 7vh;
+}
+
 .small-hr {
     width: 100% !important;
     background: #d1d1d1 !important;
@@ -541,5 +554,9 @@ hr {
 
     .register-form {
         margin-top: 3vh;
+    }
+
+    .underlined {
+        border-bottom: 2.5px solid rgba(0, 0, 0, 0);
     }
 }
