@@ -4,6 +4,7 @@ body {
     background: #fafafa;
     /* background: #50009f; */
     color: #3f3f3f;
+    width: 100%;
 }
 
 .large-hero {
@@ -36,9 +37,21 @@ body {
     width: 170px !important;
 }
 
+.dark-background {
+    background: #3f3f3f;
+}
+
+.nav-link {
+    color: #fff !important;
+}
+
 .nav-links {
     position: relative;
     top: 4px;
+}
+
+.navbar-light .nav-link {
+    color: #3f3f3f !important;
 }
 
 .menu-item {
@@ -47,6 +60,7 @@ body {
     font-weight: 700;
     transition: border 140ms;
     padding: 7px 1px 2px 1px;
+    border: 2.5px solid rgba(0, 0, 0, 0);
 }
 
 .menu-item:hover {
@@ -69,6 +83,7 @@ body {
     position: absolute;
     top: 35vh;
     left: 10vw;
+    width: 70vw;
     /* z-index: -1; */
 }
 
@@ -132,7 +147,12 @@ h4 {
     border-bottom: 1.5px solid #efefef;
 }
 
-.footer-link:hover {
+.footer-link a {
+    color: #fff;
+}
+
+.footer-link:hover a {
+    color: #fff;
     cursor: pointer;
     text-decoration: underline;
 }
@@ -383,6 +403,10 @@ hr {
     font-weight: 700;
 }
 
+.border-bottom-color {
+    border-bottom: 2.5px solid #a7009a;
+}
+
 /** Styling for Registration page **/
 .registration-content {
     margin-left: 50vw;
@@ -461,8 +485,61 @@ hr {
     margin-left: 8px;
 }
 
-.logo {
+.logo-fixed {
     position: fixed;
     top: 20px;
     left: 40px;
+}
+
+
+
+
+/** Media Queries **/
+@media only screen and (min-device-width : 300px) and (max-device-width : 812px) and (orientation : portrait) {
+    h1 {
+        font-size: 60px;
+    }
+
+    .text-over-img {
+        top: 30vh;
+        left: 10vw;
+    }
+
+    .center-small {
+        text-align: center !important;
+    }
+
+    .margin-top-sm {
+        margin-top: 30px;
+    }
+
+    .menu-item:hover {
+        border-bottom: 2.5px solid rgba(0, 0, 0, 0);
+    }
+
+    .logo-fixed {
+        position: absolute;
+        width: 100vw;
+        border-bottom: 2.5px solid #a7009a;
+        left: 0px;
+        padding-left: 11px;
+        padding-bottom: 15px;
+        background: #fff;
+    }
+
+    .registration-content {
+        margin-left: 0;
+        width: 100vw;
+        height: 100%;
+        background: #fafafa;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        padding: 0;
+        padding-top: 12vh;
+        padding-bottom: 10vh;
+    }
+
+    .register-form {
+        margin-top: 3vh;
+    }
 }
