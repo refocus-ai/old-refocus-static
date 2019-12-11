@@ -5,21 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <title>Startup Website</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon.png">
+    <link rel="icon" type="image/png" href="images/favicon.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="images/favicon.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+    <title>ReFocus AI</title>
 </head>
 
 <body>
     <div class="large-hero">
-        <img src="images/splash.svg">
+        <img src="images/background.svg">
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark navbar-hide" id="nav">
-        <a class="navbar-brand mr-3" href="index.html"><img class="logo" src="images/logo_white.png" id="nav-logo"></a>
+        <a class="navbar-brand mr-3 pl-3 pt-3" href="index.html"><img class="logo" src="images/logo.png"
+                id="nav-logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="">
             <span class="navbar-toggler-icon"></span>
@@ -33,7 +40,7 @@
                     <a class="nav-link nav-page menu-item" href="contact.html">CONTACT</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-page menu-item" href="register.html">SIGN UP</a>
+                    <button class="main-btn-sm" style="position: relative; top: -7px;">SIGN UP</button>
                 </li>
             </ul>
         </div>
@@ -162,20 +169,20 @@
     </script>
 
     <script>
-        var $win = $(window);
-        var winH = $win.height(); // Get the window height.
+        // var $win = $(window);
+        // var winH = $win.height(); // Get the window height.
 
-        $win.on("scroll", function () {
-            if ($(this).scrollTop() > (winH - 35)) {
-                $("#nav-logo").attr("src", "images/logo.png");
-                $("#nav-links").addClass("dark-text");
-            } else {
-                $("#nav-logo").attr("src", "images/logo_white.png");
-                $("#nav-links").removeClass("dark-text");
-            }
-        }).on("resize", function () { // If the user resizes the window
-            winH = $(this).height(); // you'll need the new height value
-        });
+        // $win.on("scroll", function () {
+        //     if ($(this).scrollTop() > (winH - 35)) {
+        //         $("#nav-logo").attr("src", "images/logo.png");
+        //         $("#nav-links").addClass("dark-text");
+        //     } else {
+        //         $("#nav-logo").attr("src", "images/logo_white.png");
+        //         $("#nav-links").removeClass("dark-text");
+        //     }
+        // }).on("resize", function () { // If the user resizes the window
+        //     winH = $(this).height(); // you'll need the new height value
+        // });
     </script>
 </body>
 
