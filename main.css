@@ -365,6 +365,7 @@ a:hover {
 .mission-text {
     position: absolute;
     top: 34vh;
+    width: 100vw;
 }
 
 .about-content {
