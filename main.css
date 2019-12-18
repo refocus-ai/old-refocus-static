@@ -663,4 +663,8 @@ hr {
         top: 0px !important;
         left: -12px;
     }
+
+    #flip {
+        display: none;
+    }
 }
