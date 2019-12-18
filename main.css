@@ -365,6 +365,7 @@ a:hover {
 .mission-text {
     position: absolute;
     top: 34vh;
+    width: 100vw;
 }
 
 .about-content {
@@ -656,5 +657,10 @@ hr {
 
     .underlined {
         border-bottom: 2.5px solid rgba(0, 0, 0, 0);
+    }
+
+    .main-btn-sm {
+        top: 0px !important;
+        left: -12px;
     }
 }

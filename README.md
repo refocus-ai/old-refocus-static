@@ -8,7 +8,7 @@ This website will contain the following pages:
 - About page ✅
 - Contact page ✅
 - Register page ✅
-- Pricing page ⏳
-- Demo page ⏳
+- Pricing page (on hold 🤚)
+- Demo page (on hold 🤚)
 
 Website will be hosted on https://refocusai.com
