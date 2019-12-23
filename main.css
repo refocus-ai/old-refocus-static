@@ -102,7 +102,7 @@ body {
 }
 
 .back-white {
-    background: #efefef;
+    background: #f9f9fb;
     z-index: 2;
 }
 
@@ -131,6 +131,10 @@ h2 {
 
 h4 {
     font-size: 34px;
+}
+
+.title {
+    font-weight: 900;
 }
 
 .colored-title {
