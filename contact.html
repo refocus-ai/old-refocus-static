@@ -25,14 +25,14 @@
     <!-- Start of desktop navigation -->
     <div class="navigation-desktop">
         <ul class="nav-items">
-            <li class="nav-item">
+            <li class="nav-item dark-text">
                 <a class="menu-item" href="about.html">ABOUT</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item dark-text">
                 <a class="menu-item" href="contact.html">CONTACT</a>
             </li>
             <li class="nav-item">
-                <button class="main-btn-sm" onclick="location.href = 'register.html';">SIGN UP</button>
+                <button class="main-btn-colored-sm" onclick="location.href = 'register.html';">SIGN UP</button>
             </li>
         </ul>
     </div>
@@ -81,10 +81,6 @@
                         }
                     })()
                 </script>
-                <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;">
-                    powered by <a
-                        href="https://admin.typeform.com/signup?utm_campaign=NHE8KL&utm_source=typeform.com-15205605-Free&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN"
-                        style="color: #999" target="_blank">Typeform</a> </div>
             </div>
         </div>
         <!-- <div class="row p-4">
@@ -123,7 +119,7 @@
     <!-- End of form container -->
 
     <!-- Start of footer -->
-    <div class="row footer-content align-items-center h-100 purple-background mt-4 pt-4">
+    <div class="row footer-content align-items-center h-100 purple-background pt-4">
 
         <!-- Start of links -->
         <div class="col-md-12 col-lg-4 center-small" style="font-size: 12px;">
@@ -192,6 +188,8 @@
     </script>
 
     <script>
+        $(".navigation-desktop").hide();
+        $("#hamburger-menu").hide();
         var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
         $(document).ready(function () {
