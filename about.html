@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="hamburgers.css">
     <title>ReFocus - About</title>
 </head>
 
@@ -25,30 +26,40 @@
     <!-- Start of container wrapper -->
     <div class="entire-container">
 
-        <!-- Start of navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark navbar-hide" id="nav">
-            <a class="navbar-brand mr-3 pl-3 pt-3" href="index.html"><img class="logo" src="images/logo.png"
-                    id="nav-logo"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto nav-links text-center">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link menu-item" href="about.html">ABOUT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-page menu-item" href="contact.html">CONTACT</a>
-                    </li>
-                    <li class="nav-item">
-                        <button onclick="location.href = 'register.html';" class="main-btn-sm-outline"
-                            style="position: relative; top: -7px;">SIGN UP</button>
-                    </li>
-                </ul>
+        <!-- Start of floating logo -->
+        <a class="nav-logo mr-3 pl-3 pt-3" href="index.html"><img class="logo" src="images/logo_white.png"></a>
+        <!-- End of floating logo -->
+
+        <!-- Start of desktop navigation -->
+        <div class="navigation-desktop">
+            <ul class="nav-items">
+                <li class="nav-item">
+                    <a class="menu-item" href="about.html">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="menu-item" href="contact.html">CONTACT</a>
+                </li>
+                <li class="nav-item">
+                    <button class="main-btn-sm" onclick="location.href = 'register.html';">SIGN UP</button>
+                </li>
+            </ul>
+        </div>
+        <!-- End of desktop navigation -->
+
+        <!-- Start of mobile navigation -->
+        <div id="hamburger-menu" class="white hamburger hamburger--slider">
+            <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
             </div>
-        </nav>
-        <!-- End of navbar -->
+        </div>
+        <div id="side-menu">
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><button class="main-btn-sm" onclick="location.href = 'register.html';">SIGN UP</button></li>
+            </ul>
+        </div>
+        <!-- End of mobile navigation -->
 
         <!-- Start of mission text over image -->
         <div class="mission-text">
@@ -300,6 +311,29 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
     <!-- End of scripts -->
+
+    <script>
+        var $hamburger = $(".hamburger");
+        $("#side-menu").toggle();
+        $hamburger.click(function () {
+            $hamburger.toggleClass("is-active");
+            $("#side-menu").toggle(100);
+        });
+    </script>
+
+    <script>
+        var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+        $(document).ready(function () {
+            if (isMobile) {
+                $(".navigation-desktop").hide();
+                $("#hamburger-menu").show();
+            } else {
+                $(".navigation-desktop").show();
+                $("#hamburger-menu").hide();
+            }
+        })
+    </script>
 
 </body>
 
