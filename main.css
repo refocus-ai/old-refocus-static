@@ -669,11 +669,30 @@ hr {
     }
 }
 
+.cursive {
+    font-family: 'Pacifico', cursive;
+    font-size: 72px;
+}
 
+.fixed-footer {
+    height: 100px;
+    width: 102vw;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
 
 
 /** Media Queries **/
 @media only screen and (min-device-width : 300px) and (max-device-width : 812px) {
+    .fixed-footer {
+        height: 260px;
+        width: 104vw;
+        position: absolute;
+        bottom: -30vh;
+        left: 0;
+    }
+
     .mission-text {
         position: absolute;
         top: 20vh;
