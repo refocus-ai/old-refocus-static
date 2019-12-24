@@ -12,6 +12,14 @@ body {
     width: 100%;
 }
 
+p {
+    line-height: 1.65rem;
+}
+
+h2 {
+    font-weight: 900;
+}
+
 .large-hero {
     position: fixed;
     top: 0;
@@ -93,7 +101,7 @@ body {
 }
 
 .text-over-img {
-    color: #3f3f3f;
+    color: #fafafa;
     position: absolute;
     top: 35vh;
     left: 10vw;
@@ -134,6 +142,7 @@ h4 {
 }
 
 .title {
+    color: #3f3f3f;
     font-weight: 900;
 }
 
@@ -211,27 +220,62 @@ h4 {
     transition: all 300ms;
 }
 
+.main-btn-outline {
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid #fafafa;
+    padding: 14px 25px 14px 25px;
+    border-radius: 30px;
+    color: #fafafa;
+    font-weight: 700;
+    transition: all 300ms;
+}
+
+.main-btn-outline:hover {
+    background: #fafafa;
+    color: #01043b;
+    border: 1px solid #fafafa;
+    transition: all 300ms;
+}
+
 .main-btn-sm {
     background: #fafafa;
     border: 1px solid #fafafa;
-    padding: 8px 25px 8px 25px;
+    padding: 10px 25px 8px 25px;
     border-radius: 30px;
-    color: #ff9500;
+    color: #01043b;
     font-weight: 700;
     transition: all 300ms;
     font-size: 14px;
 }
 
 .main-btn-sm:hover {
-    background: #ff9500;
+    background: #655b88;
     color: #fafafa;
-    border: 1px solid #ff9500;
+    border: 1px solid #655b88;
+    transition: all 300ms;
+}
+
+.main-btn-sm-outline {
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid #fafafa;
+    padding: 10px 25px 8px 25px;
+    border-radius: 30px;
+    color: #fafafa;
+    font-weight: 700;
+    transition: all 300ms;
+    font-size: 14px;
+}
+
+.main-btn-sm-outline:hover {
+    background: #fafafa;
+    color: #3f3f3f;
+    border: 1px solid #fafafa;
     transition: all 300ms;
 }
 
 .main-btn-colored {
-    background: #ff9500;
-    border: 1px solid #ff9500;
+    background: #e67428;
+    border: 1px solid #e67428;
     padding: 14px 25px 14px 25px;
     border-radius: 30px;
     color: #fafafa;
@@ -241,8 +285,8 @@ h4 {
 
 .main-btn-colored:hover {
     /* background: #ff95b2; */
-    background: #e67428;
-    border: 1px solid #e67428;
+    background: #ff9500;
+    border: 1px solid #ff9500;
     transition: all 300ms;
 }
 
@@ -369,7 +413,7 @@ a:hover {
 /** About Page Styling **/
 .mission-text {
     position: absolute;
-    top: 34vh;
+    top: 37vh;
     width: 100vw;
 }
 
@@ -413,6 +457,12 @@ hr {
 .bio-text {
     margin-top: 0px;
     font-size: 12px !important;
+    line-height: 1.1rem;
+    font-style: italic;
+}
+
+.bio-author-text {
+    font-size: 12px !important;
 }
 
 .job-title-text {
@@ -422,6 +472,19 @@ hr {
 .person-social {
     font-size: 22px;
     margin-top: 5px;
+}
+
+.avatar-img {
+    border-radius: 300px;
+}
+
+.bio-link {
+    color: #3f3f3f;
+}
+
+.bio-link:hover {
+    color: #ff9500;
+    cursor: pointer;
 }
 
 
