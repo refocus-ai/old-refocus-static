@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="hamburgers.css">
+    <title>ReFocus - Contact</title>
+</head>
+
+<body>
+
+    <!-- Start of floating logo -->
+    <a class="nav-logo mr-3 pl-3 pt-3" href="index.html"><img class="logo" src="images/logo.png"></a>
+    <!-- End of floating logo -->
+
+    <!-- Start of desktop navigation -->
+    <div class="navigation-desktop">
+        <ul class="nav-items">
+            <li class="nav-item dark-text">
+                <a class="menu-item" href="about.html">ABOUT</a>
+            </li>
+            <li class="nav-item dark-text">
+                <a class="menu-item" href="contact.html">CONTACT</a>
+            </li>
+            <li class="nav-item">
+                <button class="main-btn-colored-sm" onclick="location.href = 'register.html';">SIGN UP</button>
+            </li>
+        </ul>
+    </div>
+    <!-- End of desktop navigation -->
+
+    <!-- Start of mobile navigation -->
+    <div id="hamburger-menu" class="hamburger hamburger--slider">
+        <div class="hamburger-box">
+            <div class="hamburger-inner hamburger-inner-dark"></div>
+        </div>
+    </div>
+    <div id="side-menu">
+        <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><button class="main-btn-sm" onclick="location.href = 'register.html';">SIGN UP</button></li>
+        </ul>
+    </div>
+    <!-- End of mobile navigation -->
+
+    <!-- Start of thank you -->
+    <div class="row mt-4">
+        <div class="col-12 text-center">
+            <img src="images/thank-you.gif">
+            <h2 class="mt-4">Thank you for your interest!</h2>
+            <h6 style="margin-bottom: 10vh">We will reach out to you when ReFocus is ready for your enjoyment.</h6>
+        </div>
+    </div>
+
+    <!-- Start of footer -->
+    <div class="row footer-content align-items-center h-100 purple-background mt-4 pt-4">
+
+        <!-- Start of links -->
+        <div class="col-md-12 col-lg-4 center-small" style="font-size: 12px;">
+            <span class="footer-link"><a href="about.html">ABOUT US</a></span>
+            <br />
+            <span class="footer-link"><a href="contact.html">CONTACT US</a></span>
+            <br />
+            <span class="footer-link"><a href="#">TERMS & CONDITIONS</a></span>
+        </div>
+        <!-- End of links -->
+
+        <!-- Start of socials -->
+        <div class="col-md-12 col-lg-4 text-center socials margin-top-sm">
+            <i class="fab fa-facebook-square mr-3 social"></i>
+            <i class="fab fa-linkedin mr-3 social"></i>
+            <i class="fab fa-instagram mr-3 social"></i>
+            <i class="fab fa-twitter-square social"></i>
+        </div>
+        <!-- End of socials -->
+
+        <!-- Start of newsletter -->
+        <!-- <div class="col-md-12 col-lg-3 margin-top-sm center-small">
+            <span style="font-weight: 700">Subscribe to our newsletter</span>
+            <div class="row mt-2">
+                <div class="col-8">
+                    <input type="text" class="form-input" placeholder="Email address" aria-label="Email address"
+                        aria-describedby="basic-addon2">
+                </div>
+                <div class="col-2">
+                    <button class="form-btn" style="display: inline-block" type="button">OK</button>
+                </div>
+            </div>
+        </div> -->
+        <!-- End of newsletter -->
+
+        <!-- Start of address -->
+        <div class="col-md-12 col-lg-4 text-right margin-top-sm center-small" style="font-size: 12px;">
+            <span>Sacramento, CA 95814</span>
+            <br />
+            <span>+1 661 904 0408</span>
+            <br />
+            <span>support@refocus.com</span>
+        </div>
+        <!-- End of address -->
+
+    </div>
+    <!-- End of footer -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+    <script>
+        var $hamburger = $(".hamburger");
+        $("#side-menu").toggle();
+        $hamburger.click(function () {
+            $hamburger.toggleClass("is-active");
+            $("#side-menu").toggle(100);
+        });
+    </script>
+
+    <script>
+        var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+        $(document).ready(function () {
+            if (isMobile) {
+                $(".navigation-desktop").hide();
+                $("#hamburger-menu").show();
+            } else {
+                $(".navigation-desktop").show();
+                $("#hamburger-menu").hide();
+            }
+        })
+    </script>
+
+</body>
+
+</html>

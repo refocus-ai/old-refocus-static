@@ -197,6 +197,10 @@ h4 {
     color: #3f3f3f !important;
 }
 
+.nav-item a .dark-text {
+    color: #3f3f3f !important;
+}
+
 .dark-text .menu-item:hover {
     border-bottom: 2.5px solid #3f3f3f !important;
     transition: border 110ms;
