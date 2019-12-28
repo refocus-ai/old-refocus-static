@@ -178,6 +178,10 @@ h4 {
     border-bottom: 1.5px solid #efefef;
 }
 
+a .social {
+    color: #efefef !important
+}
+
 .footer-link a {
     color: #efefef;
 }
@@ -684,6 +688,40 @@ hr {
 
 
 /** Media Queries **/
+/** iPad **/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    .landing-text {
+        font-size: 50px;
+    }
+
+    #flip {
+        font-size: 50px;
+        height: 60px;
+        overflow: hidden;
+    }
+
+    #flip>div>div {
+        color: #fafafa;
+        height: 45px;
+        margin-bottom: 45px;
+        display: inline-block;
+    }
+}
+
+/* @media only screen and (min-device-width : 850) and (max-device-width : 1050) { */
+/* #flip {
+        height: 170px;
+        overflow: hidden;
+    }
+
+    #flip>div>div {
+        color: #fafafa;
+        height: 90px;
+        margin-bottom: 90px;
+        display: inline-block;
+    }
+} */
+
 @media only screen and (min-device-width : 300px) and (max-device-width : 812px) {
     .fixed-footer {
         height: 260px;
