@@ -7370,4 +7370,42 @@ h6 {
   margin-top: 10vh;
 }
 
+.back-image {
+  position: fixed;
+  top: -1%;
+  left: 0;
+  width: 102%;
+  height: 102%;
+  overflow-y: hidden;
+  z-index: -1;
+}
+
+.logo-absolute {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+
+.register-section {
+  width: 40vw;
+  height: 100vh;
+  background: #fff;
+  padding: 23vh 40px 40px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 9px;
+  font-size: 13px;
+}
+
+.main-btn-colored:hover {
+  cursor: pointer;
+  background: #ff7b00 !important;
+}
+
+.form-input:focus {
+  outline: 0 !important;
+}
+
 /*# sourceMappingURL=style.css.map */
