@@ -7,6 +7,7 @@
       $("#sticky-header").removeClass("sticky");
       $('#back-top').fadeIn(500);
     } else {
+      $("#logo-img").attr("src", "img/logo_white.png");
       $("#sticky-header").addClass("sticky");
       $('#back-top').fadeIn(500);
     }

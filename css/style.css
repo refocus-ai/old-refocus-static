@@ -900,7 +900,7 @@ h3 {
   /* line 16, ../../Arafath/CL/CL October/214. App Landing Page/HTML/scss/_header.scss */
   .header-area .main-header-area {
     padding: 10px 0px;
-    background: #1d1a1d;
+    background: #1e1e1e;
   }
 }
 
@@ -909,7 +909,7 @@ h3 {
   /* line 16, ../../Arafath/CL/CL October/214. App Landing Page/HTML/scss/_header.scss */
   .header-area .main-header-area {
     padding: 10px 15px;
-    background: #1d1a1d;
+    background: #1e1e1e;
   }
 }
 
@@ -1245,7 +1245,7 @@ h3 {
   -webkit-transition: transform 500ms ease, background 500ms ease;
   box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
   /* background: rgba(255, 255, 255, 0.96); */
-  background: #1d1a1d;
+  background: #1e1e1e;
 }
 
 .header-area.dark-text .main-header-area.sticky a {
@@ -1421,8 +1421,9 @@ h3 {
 
   /* line 8, ../../Arafath/CL/CL October/214. App Landing Page/HTML/scss/_slider.scss */
   .slider_area .single_slider {
-    height: auto;
-    background-size: cover;
+    height: 630px;
+    background-size: 530%;
+    background-position: unset !important;
   }
 }
 
@@ -1430,7 +1431,9 @@ h3 {
 
   /* line 8, ../../Arafath/CL/CL October/214. App Landing Page/HTML/scss/_slider.scss */
   .slider_area .single_slider {
-    height: 620px;
+    height: 584px;
+    background-size: 208%;
+    background-position: unset !important;
   }
 }
 
@@ -4259,7 +4262,7 @@ h3 {
 
   /* line 133, ../../Arafath/CL/CL October/214. App Landing Page/HTML/scss/_contact.scss */
   .contact-section {
-    padding: 140px 0 70px;
+    padding: 170px 0 70px;
   }
 }
 
@@ -7312,7 +7315,6 @@ h6 {
 .content-card.active {
   color: #fafafa;
   background: #ff6334;
-  font-weight: 700;
 }
 
 .content-card.active:hover {
@@ -7375,7 +7377,7 @@ h6 {
   top: -1%;
   left: 0;
   width: 102%;
-  height: 102%;
+  height: 110%;
   overflow-y: hidden;
   z-index: -1;
 }
@@ -7393,10 +7395,31 @@ h6 {
   padding: 23vh 40px 40px;
 }
 
+@media (max-width: 820px) {
+
+  .register-section {
+    width: 100vw;
+    height: auto;
+    padding: 14vh 40px 40px;
+  }
+}
+
+@media (min-width: 820px) and (max-width: 1025px) {
+
+  .register-section {
+    width: 50vw;
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 63vh;
+    padding: 16vh 40px 40px;
+  }
+}
+
 .form-input {
   width: 100%;
   padding: 9px;
   font-size: 13px;
+  border: 1px solid #dfdfdf;
 }
 
 .main-btn-colored:hover {
@@ -7406,6 +7429,42 @@ h6 {
 
 .form-input:focus {
   outline: 0 !important;
+}
+
+.info-text-area {
+  padding-top: 120px;
+}
+
+.text-link {
+  color: #ff7b00;
+}
+
+.text-link:hover {
+  color: #ff7b00;
+  text-decoration: underline;
+}
+
+.thank-you-content {
+  width: 100vw;
+  height: 100vh;
+}
+
+.thank-you-content img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  object-position: 17% 50%;
+}
+
+.thank-you-card {
+  position: absolute;
+  right: 30px;
+  bottom: 50px;
+  width: 350px;
+  height: auto;
+  background: #fafafa;
+  border-radius: 3px;
+  padding: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
