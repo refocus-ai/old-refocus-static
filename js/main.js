@@ -4,6 +4,7 @@
   $(window).on('scroll', function () {
     var scroll = $(window).scrollTop();
     if (scroll < 400) {
+      $("#logo-img").attr("src", "img/logo.png");
       $("#sticky-header").removeClass("sticky");
       $('#back-top').fadeIn(500);
     } else {
