@@ -1,270 +1,379 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="zxx">
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155018746-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>ReFocus</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <!-- Place favicon.ico in the root directory -->
 
-        gtag('config', 'UA-155018746-1');
-    </script>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
-    <link rel="stylesheet" href="hamburgers.css">
-    <title>ReFocus AI</title>
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/gijgo.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 
 <body>
-    <!-- Start of background splash image -->
-    <div class="large-hero">
-        <img src="images/background.jpg">
-    </div>
-    <!-- End of background splash image -->
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
 
-    <!-- Start of floating logo -->
-    <a class="nav-logo mr-3 pl-3 pt-3" href="index.html"><img class="logo" src="images/logo_white.png"></a>
-    <!-- End of floating logo -->
+    <!-- header-start -->
+    <header>
+        <div class="header-area ">
+            <div id="sticky-header" class="main-header-area">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-xl-3 col-lg-2">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <img width="110px" src="img/logo_white.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-7">
+                            <div class="main-menu  d-none d-lg-block">
+                                <nav>
+                                    <ul id="navigation">
+                                        <li><a class="active" href="index.html">Home</a></li>
+                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 d-none d-lg-block">
+                            <div class="Appointment">
+                                <div class="book_btn d-none d-lg-block">
+                                    <a href="register.html">Sign Up</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
 
-    <!-- Start of desktop navigation -->
-    <div class="navigation-desktop">
-        <ul class="nav-items">
-            <li class="nav-item">
-                <a class="menu-item" href="about.html">ABOUT</a>
-            </li>
-            <li class="nav-item">
-                <a class="menu-item" href="contact.html">CONTACT</a>
-            </li>
-            <li class="nav-item">
-                <button class="main-btn-sm" onclick="location.href = 'register.html';">SIGN UP</button>
-            </li>
-        </ul>
-    </div>
-    <!-- End of desktop navigation -->
-
-    <!-- Start of mobile navigation -->
-    <div id="hamburger-menu" class="white hamburger hamburger--slider">
-        <div class="hamburger-box">
-            <div class="hamburger-inner"></div>
-        </div>
-    </div>
-    <div id="side-menu">
-        <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><button class="main-btn-sm" onclick="location.href = 'register.html';">SIGN UP</button></li>
-        </ul>
-    </div>
-    <!-- End of mobile navigation -->
-
-    <!-- Start of text overlayed on landing page -->
-    <div class="text-over-img">
-        <h1 class="mb-3 landing-text">It's time to ReFocus <div id=flip>
-                <!-- Flipping Text start -->
-                <div>
-                    <div>the customer experience.</div>
-                </div>
-                <div>
-                    <div>on real-time quotes.</div>
-                </div>
-                <div>
-                    <div>on exposure management.</div>
                 </div>
             </div>
-            <!-- Flipping text end -->
-        </h1>
-        <button onclick="location.href = 'register.html';" class="main-btn-outline">Try ReFocus</button>
+        </div>
+    </header>
+    <!-- header-end -->
+
+    <!-- slider_area_start -->
+    <div class="slider_area">
+        <div class="single_slider  d-flex align-items-center slider_bg_1">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-7 col-md-6">
+                        <div class="slider_text">
+                            <h3 style="font-weight: 700 !important" class="wow fadeInDown" data-wow-duration="1s"
+                                data-wow-delay=".1s">It's time to ReFocus
+                            </h3>
+                            <p class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".1s">Avoid the mundane, so
+                                you can focus on what's important.</p>
+                            <div class="video_service_btn wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".1s">
+                                <a href="register.html" class="boxed-btn3">ReFocus Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <!-- End of overlayed text -->
-
-    <!-- Start of landing page content -->
-    <div class="back-white content">
-
-        <!-- Start of first text & image -->
-        <div class="row p-4 align-items-center h-100">
-            <div class="col-md-12 col-lg-2 order-3 order-lg-1"></div>
-            <div class="col-md-12 col-lg-4 mx-auto p-3 order-2 order-lg-2">
-                <h4 class="title">Better customer service</h4>
-                <p>Imagine a world where offering prospective customers competitive quotes was automatic &
-                    straightforward,
-                    transforming agents into superheroes. For a limited time, demo ReFocus’s AI platform to taking the
-                    headache
-                    out of insurance and give all your agent’s superpowers.
-                </p>
-
+    <!-- slider_area_end -->
+    <!-- service_area  -->
+    <div class="service_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section_title text-center  wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".1s">
+                        <h3 style="font-weight: 700 !important">Welcome to ReFocus AI</h3>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-12 col-lg-4 p-3 order-1 order-lg-3">
-                <img src="images/contact.jpg">
+
+            <div class="row">
+                <div class="col-xl-8 offset-xl-2 col-lg-12">
+                    <p>ReFocus makes insurance agents into superheroes and insurance companies into market leaders.
+                        Whether you are trying to reinvent your customer journey, build out your book of business,
+                        penetrate a new market, adjust your exposure, or leverage new technology to make your company
+                        better, ReFocus was designed with you in mind.</p>
+                </div>
             </div>
-            <div class="col-md-12 col-lg-2 order-4 order-lg-4"></div>
         </div>
-        <!-- End of first text & image -->
+    </div>
+    <!--/ service_area  -->
 
-        <!-- Start of second text & image -->
-        <div class="row p-4 align-items-center h-100">
-            <div class="col-md-12 col-lg-2"></div>
-            <div class="col-md-12 col-lg-4 p-3">
-                <img src="images/unexpected.jpg">
+    <!-- about  -->
+    <div class="features_area ">
+        <div class="container">
+            <div class="features_main_wrap">
+                <div class="row  align-items-center">
+                    <div class="col-xl-5 col-lg-5 col-md-6">
+                        <div class="features_info2">
+                            <h3 id="content-title-1" class="bold">Make your agents superheros.</h3>
+                            <h3 id="content-title-2" class="bold">Be ready for the next disaster.</h3>
+                            <h3 id="content-title-3" class="bold">Make accurate, real-time decisions.</h3>
+                            <p id="content-p-1">Imagine a world where offering prospective customers competitive quotes
+                                was automatic &
+                                straightforward, transforming agents into superheroes. For a limited time, demo
+                                ReFocus’s AI platform to taking the headache out of insurance and give all your agent’s
+                                superpowers.</p>
+                            <p id="content-p-2">With natural catastrophes striking more often, policyholders are
+                                collecting payouts sooner. Visionary insurance companies are cutting exposure and
+                                risk-transfer costs through better modeling rather than more reinsurance. Click here to
+                                see how ReFocus can make your company a leader and keep you there.</p>
+                            <p id="content-p-3">Making accurate decisions in real-time is almost impossible if your
+                                company does not use exposure models that update daily. Modern insurance companies
+                                understand how every prospective policy fits in to their current book of business to
+                                maximize revenue while minimizing losses. Click here to see how ReFocus can enable your
+                                company’s transition to Insurance 2.0.</p>
+                            <div id="content-1" class="content-card active">
+                                <span class="content-title"><svg class="mr-3 icon-with-text" id="icon"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                        <defs>
+                                            <style>
+                                                .cls-1 {
+                                                    fill: none;
+                                                }
+                                            </style>
+                                        </defs>
+                                        <title>star</title>
+                                        <path
+                                            d="M16,6.52l2.76,5.58.46,1,1,.15,6.16.89L22,18.44l-.75.73.18,1,1.05,6.13-5.51-2.89L16,23l-.93.49L9.56,26.34l1-6.13.18-1L10,18.44,5.58,14.09l6.16-.89,1-.15.46-1L16,6.52M16,2l-4.55,9.22L1.28,12.69l7.36,7.18L6.9,30,16,25.22,25.1,30,23.36,19.87l7.36-7.17L20.55,11.22Z" />
+                                        <rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;"
+                                            class="cls-1" width="32" height="32" />
+                                    </svg>Better
+                                    customer
+                                    service</span>
+                            </div>
+                            <div id="content-2" class="content-card">
+                                <span class="content-title"><svg class="mr-3 icon-with-text" id="icon"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                        <defs>
+                                            <style>
+                                                .cls-1 {
+                                                    fill: none;
+                                                }
+                                            </style>
+                                        </defs>
+                                        <title>cloud--lightning</title>
+                                        <path
+                                            d="M23.5,22H23V20h.5a4.5,4.5,0,0,0,.36-9L23,11l-.1-.82a7,7,0,0,0-13.88,0L9,11,8.14,11a4.5,4.5,0,0,0,.36,9H9v2H8.5A6.5,6.5,0,0,1,7.2,9.14a9,9,0,0,1,17.6,0A6.5,6.5,0,0,1,23.5,22Z" />
+                                        <polygon
+                                            points="15.87 30.5 14.13 29.5 17.28 24 11.28 24 16.13 15.5 17.87 16.5 14.72 22 20.72 22 15.87 30.5" />
+                                        <rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;"
+                                            class="cls-1" width="32" height="32" />
+                                    </svg>Prepare for the unexpected</span>
+                            </div>
+                            <div id="content-3" class="content-card">
+                                <span class="content-title"><svg class="mr-3 icon-with-text" id="icon"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                        <defs>
+                                            <style>
+                                                .cls-1 {
+                                                    fill: none;
+                                                }
+                                            </style>
+                                        </defs>
+                                        <title>connect</title>
+                                        <path
+                                            d="M23,16a7,7,0,0,0-4.18,1.39L14.6,13.17A6.86,6.86,0,0,0,16,9a7,7,0,1,0-2.81,5.59l4.21,4.22A7,7,0,1,0,23,16ZM4,9a5,5,0,1,1,5,5A5,5,0,0,1,4,9Z"
+                                            transform="translate(0 0.01)" />
+                                        <rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;"
+                                            class="cls-1" width="32" height="32" />
+                                    </svg>Exposure management</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-lg-5 offset-xl-1 offset-lg-1 col-md-6 ">
+                        <div class="about_draw wow fadeInUp" data-wow-duration=".7s" data-wow-delay=".5s">
+                            <img id="content-img-1" src="img/Hero.svg" alt="">
+                            <img id="content-img-2" src="img/unexpected.jpg" alt="">
+                            <img id="content-img-3" src="img/woman-computer.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-12 col-lg-4 mx-auto p-3">
-                <h4 class="title">Prepare for the unexpected</h4>
-                <p>With natural catastrophes striking more often, policyholders are collecting payouts sooner. Visionary
-                    insurance companies are cutting exposure and risk-transfer costs through better modeling rather than
-                    more
-                    reinsurance. Click here to see how ReFocus can make your company a leader and keep you there.
-                </p>
+            <div class="features_main_wrap mt-4">
+                <div class="row  align-items-center">
+                    <div class="offset-lg-3 col-lg-6 col-md-12">
+                        <div class="features_info">
+                            <h3 class="wow fadeInUp text-center" data-wow-duration=".5s" data-wow-delay=".3s">Show your
+                                interest</h3>
+                            <p class="wow fadeInUp" data-wow-duration=".6s" data-wow-delay=".4s">ReFocus is working on
+                                the finishing touches for your product. Sign up now to show your interest, and be the
+                                first to experience:
+                            </p>
+                            <ul>
+                                <li class="wow fadeInUp" data-wow-duration=".7s" data-wow-delay=".5s">Live exposure
+                                    model renderings based on your real-time data</li>
+                                <li class="wow fadeInUp" data-wow-duration=".8s" data-wow-delay=".6s">Automated risk
+                                    analysis on your anonymized client data</li>
+                                <li class="wow fadeInUp" data-wow-duration=".9s" data-wow-delay=".7s">Something else
+                                    here</li>
+                            </ul>
 
+                            <div class="about_btn wow fadeInUp" data-wow-duration=".10s" data-wow-delay=".8s">
+                                <a class="boxed-btn4" href="register.html">Sign Up</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-12 col-lg-2"></div>
         </div>
-        <!-- End of second text & image -->
+    </div>
+    <!--/ about  -->
 
-        <!-- Start of last text & image -->
-        <div class="row p-4 align-items-center h-100">
-            <div class="col-md-12 col-lg-2 order-3 order-lg-1"></div>
-            <div class="col-md-12 col-lg-4 mx-auto p-3 order-2 order-lg-2">
-                <h4 class="title">Exposure management</h4>
-                <p>Making accurate decisions in real-time is almost impossible if your company does not use exposure
-                    models that
-                    update daily. Modern insurance companies understand how every prospective policy fits in to their
-                    current
-                    book of business to maximize revenue while minimizing losses. Click here to see how ReFocus can
-                    enable your
-                    company’s transition to Insurance 2.0.
-                </p>
-
-            </div>
-            <div class="col-md-12 col-lg-4 p-3 order-1 order-lg-3">
-                <img src="images/man-on-laptop.jpg">
-            </div>
-            <div class="col-md-12 col-lg-2 order-4 order-lg-4"></div>
-        </div>
-        <!-- End of last test & image -->
-
-        <!-- Start of action title w/ button -->
-        <div class="row pl-4 pt-4 pr-4" style="margin-top: 15vh; padding-bottom: 15vh">
-            <div class="col-md-12 col-lg-3"></div>
-            <div class="col-md-12 col-lg-6 lg-offset-3">
+    <!-- footer start -->
+    <footer class="footer">
+        <div class="footer_top">
+            <div class="container">
                 <div class="row">
-                    <div class="col-12 text-center">
-                        <h2 class="title">One click away...</h2>
-                        <p style="font-style: italic">Start your company’s Insurance 2.0 journey today with ReFocus
+                    <div class="col-xl-4 col-md-6 col-lg-4">
+                        <div class="footer_widget">
+                            <div class="footer_logo">
+                                <a href="#">
+                                    <img width="150px" src="img/logo_white.png" alt="">
+                                </a>
+                            </div>
+                            <p>
+                                Welcome to Insurance 2.0
+                            </p>
+                            <div class="socail_links">
+                                <ul>
+                                    <li>
+                                        <a href="https://www.facebook.com/refocusai/">
+                                            <i class="ti-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://twitter.com/ReFocusai">
+                                            <i class="ti-twitter-alt"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/refocusai/">
+                                            <i class="fa fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.linkedin.com/company/refocusai/">
+                                            <i class="fa fa-linkedin"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-xl-2 offset-xl-1 col-md-6 col-lg-3">
+                        <div class="footer_widget">
+                            <h3 class="footer_title">
+                                Services
+                            </h3>
+                            <ul>
+                                <li><a href="#">Coming soon</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-6 col-lg-2">
+                        <div class="footer_widget">
+                            <h3 class="footer_title">
+                                Useful Links
+                            </h3>
+                            <ul>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="register.html">Sign Up</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-lg-3">
+                        <div class="footer_widget">
+                            <h3 class="footer_title">
+                                Legal
+                            </h3>
+                            <ul>
+                                <li>
+                                    <a href="privacy.html">
+                                        Privacy Policy
+                                    </a>
+                                </li>
+                                <li><a href="tos.html">
+                                        Terms of Service
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right_text">
+            <div class="container">
+                <div class="footer_border"></div>
+                <div class="row">
+                    <div class="col-xl-12">
+                        <p class="copy_right text-center">
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy;<script>
+                                document.write(new Date().getFullYear());
+                            </script> All rights reserved | This template is made with <i class="fa fa-heart-o"
+                                aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         </p>
                     </div>
                 </div>
-                <div class="row mt-3">
-                    <div class="col-12 text-center">
-                        <button onclick="location.href = 'register.html';" class="main-btn-colored shadow-sm"
-                            style="width: 50%">LETS TRY</button>
-                    </div>
-
-                </div>
             </div>
         </div>
-        <!-- End of action title w/ button -->
+    </footer>
+    <!--/ footer end  -->
 
-    </div>
-    <!-- End of landing page content -->
+    <!-- JS here -->
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/ajax-form.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/scrollIt.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/nice-select.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/gijgo.min.js"></script>
 
-    <!-- Start of footer -->
-    <div class="row footer-content align-items-center h-100">
+    <!--contact js-->
+    <script src="js/contact.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script>
 
-        <!-- Start of clickable nav links -->
-        <div class="col-md-12 col-lg-4 center-small" style="font-size: 12px">
-            <span class="footer-link" style="text-shadow: 0 0.4px #6d6d6d;"><a href="about.html">About Us</a></span>
-            <br />
-            <span class="footer-link" style="text-shadow: 0 0.4px #6d6d6d;"><a href="contact.html">Contact Us</a></span>
-            <br />
-            <span class="footer-link" style="text-shadow: 0 0.4px #6d6d6d;"><a href="#">Terms & Conditions</a></span>
-        </div>
-        <!-- End of clickable nav links -->
-
-        <!-- Start of socials -->
-        <div class="col-md-12 col-lg-4 text-center socials margin-top-sm">
-            <a href="https://www.facebook.com/refocusai/"><i class="fab fa-facebook-square mr-3 social"></i></a>
-            <a href="https://www.linkedin.com/company/refocusai/"><i class="fab fa-linkedin mr-3 social"></i></a>
-            <a href="https://www.instagram.com/refocusai/"><i class="fab fa-instagram mr-3 social"></i></a>
-            <a href="https://twitter.com/ReFocusai"><i class="fab fa-twitter-square social"></i></a>
-        </div>
-        <!-- End of socials -->
-
-        <!-- Start of newsletter signup -->
-        <!-- <div class="col-md-12 col-lg-3 margin-top-sm center-small">
-            <span style="font-weight: 700">Subscribe to our newsletter</span>
-            <div class="row mt-2">
-                <div class="col-8">
-                    <input type="text" class="form-input" placeholder="Email address" aria-label="Email address"
-                        aria-describedby="basic-addon2">
-                </div>
-                <div class="col-2">
-                    <button class="form-btn" style="display: inline-block" type="button">OK</button>
-                </div>
-            </div>
-        </div> -->
-        <!-- End of newsletter signup -->
-
-        <!-- Start of address -->
-        <div class="col-md-12 col-lg-4 text-right margin-top-sm center-small" style="font-size: 12px;">
-            <span>Sacramento, CA 95814</span>
-            <br />
-            <span>+1 661 904 0408</span>
-            <br />
-            <span>support@refocus.com</span>
-        </div>
-        <!-- End of address -->
-
-    </div>
-    <!-- End of footer -->
-
-    <!-- Start of scripts -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
-    <!-- End of scripts -->
-
-    <script>
-        var $hamburger = $(".hamburger");
-        $("#side-menu").toggle();
-        $hamburger.click(function () {
-            $hamburger.toggleClass("is-active");
-            $("#side-menu").toggle(100);
-        });
-    </script>
-
-    <script>
-        var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-
-        $(document).ready(function () {
-            if (isMobile) {
-                $(".navigation-desktop").hide();
-                $("#hamburger-menu").show();
-            } else {
-                $(".navigation-desktop").show();
-                $("#hamburger-menu").hide();
-            }
-        })
-    </script>
-
+    <script src="js/main.js"></script>
 </body>
 
 </html>
