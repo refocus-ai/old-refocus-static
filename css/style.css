@@ -7395,12 +7395,39 @@ h6 {
   padding: 23vh 40px 40px;
 }
 
+@media (max-width: 767px) {
+  .mobile-margin-top {
+    margin-top: 8vh;
+  }
+}
+
 @media (max-width: 820px) {
 
   .register-section {
     width: 100vw;
     height: auto;
     padding: 14vh 40px 40px;
+  }
+
+  #large-images {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 820px) {
+  #content-mobile-img-1 {
+    width: 70% !important;
+    margin-left: 15%;
+  }
+
+  #content-mobile-img-2 {
+    width: 70% !important;
+    margin-left: 15%;
+  }
+
+  #content-mobile-img-3 {
+    width: 70% !important;
+    margin-left: 15%;
   }
 }
 
@@ -7413,6 +7440,8 @@ h6 {
     height: 63vh;
     padding: 16vh 40px 40px;
   }
+
+
 }
 
 .form-input {
