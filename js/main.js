@@ -4,7 +4,9 @@
   $(window).on('scroll', function () {
     var scroll = $(window).scrollTop();
     if (scroll < 400) {
-      $("#logo-img").attr("src", "img/logo.png");
+      if (!(/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))) {
+        $("#logo-img").attr("src", "img/logo.png");
+      }
       $("#sticky-header").removeClass("sticky");
       $('#back-top').fadeIn(500);
     } else {
@@ -352,6 +354,7 @@
     });
 
     if (/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      $("#logo-img").attr("src", "img/logo_white.png");
       $('#content-title-1').show();
       $('#content-p-1').show();
       $('#content-mobile-img-1').show();

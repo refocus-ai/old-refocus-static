@@ -1270,6 +1270,10 @@ h3 {
   .header-area .main-header-area.sticky {
     padding: 10px 0px;
   }
+
+  .header-area.dark-text .main-header-area.sticky a {
+    color: #3f3f3f !important;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1277,6 +1281,10 @@ h3 {
   /* line 255, ../../Arafath/CL/CL October/214. App Landing Page/HTML/scss/_header.scss */
   .header-area .main-header-area.sticky {
     padding: 10px 0px;
+  }
+
+  .header-area.dark-text .main-header-area.sticky a {
+    color: #3f3f3f !important;
   }
 }
 
