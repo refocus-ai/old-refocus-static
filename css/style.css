@@ -7504,4 +7504,14 @@ h6 {
   padding: 20px;
 }
 
+.signin-button a {
+  color: #fafafa !important;
+  font-size: 14px;
+  margin-right: 25px;
+}
+
+.signin-button a:hover {
+  text-decoration: underline;
+}
+
 /*# sourceMappingURL=style.css.map */
