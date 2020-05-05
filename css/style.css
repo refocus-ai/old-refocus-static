@@ -7515,7 +7515,7 @@ h6 {
 }
 
 .pricing-card {
-  border: 2px solid #efefef;
+  border: 3px solid #efefef;
   border-radius: 6px;
   padding: 35px 10px;
 }
@@ -7571,10 +7571,34 @@ h6 {
   font-style: italic;
   display: block;
   color: #3f3f3f;
+  margin-top: 5px;
+  margin-bottom: 2px;
 }
 
-.highlighted {
-  border-color: #ff63347e;
+/* .highlighted {
+  border-color: #ff63347e; */
+/* } */
+
+.pricing-button {
+  background: #ff6334;
+  color: #fff;
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 40px;
+  width: 90%;
+  margin-left: 5%;
+  transition: background 300ms;
+}
+
+.pricing-button:hover {
+  background: #fc531f;
+  cursor: pointer;
+  transition: background 300ms;
+}
+
+.pricing-page {
+  margin-top: 150px;
+  margin-bottom: 150px;
 }
 
 /*# sourceMappingURL=style.css.map */
