@@ -239,35 +239,108 @@
                     </div>
                 </div>
             </div>
-            <div class="features_main_wrap mt-4">
-                <div class="row  align-items-center">
-                    <div class="offset-lg-3 col-lg-6 col-md-12">
-                        <div class="features_info">
-                            <h3 class="wow fadeInUp text-center" data-wow-duration=".5s" data-wow-delay=".3s">Show your
-                                interest</h3>
-                            <p class="wow fadeInUp" data-wow-duration=".6s" data-wow-delay=".4s">ReFocus is constantly
-                                adding new features. Sign up now to show your interest, and be the
-                                first to know about new and upcoming features:
-                            </p>
-                            <ul>
-                                <li class="wow fadeInUp" data-wow-duration=".7s" data-wow-delay=".5s">Live exposure
-                                    model renderings based on your real-time data</li>
-                                <li class="wow fadeInUp" data-wow-duration=".8s" data-wow-delay=".6s">Automated risk
-                                    analysis on your anonymized client data</li>
-                                <!-- <li class="wow fadeInUp" data-wow-duration=".9s" data-wow-delay=".7s">Something else
-                                    here</li> -->
-                            </ul>
+        </div>
+    </div>
+    <!--/ about  -->
 
-                            <div class="about_btn wow fadeInUp" data-wow-duration=".10s" data-wow-delay=".8s">
-                                <a class="boxed-btn4" href="https://app.refocusai.com">Try it now!</a>
-                            </div>
+    <!-- prising_area  -->
+    <div class="prising_area p-0">
+        <div class="container p-0">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section_title text-center wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".5s">
+                        <h3 class="mb-0">Unlock full Power</h3>
+                        <div class="features_info mt-0">
+                            <p class="wow fadeInUp" data-wow-duration=".6s" data-wow-delay=".4s">ReFocus is
+                                constantly
+                                adding new features. Sign up now to be the first to catch the early bird
+                                pricing.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="row pl-3 pr-3 pt-0 mt-0 text-center">
+                <div class="col-xl-4 offset-xl-2 pricing-card highlighted">
+                    <h3 class="text-center mb-4">ReFocus Standard</h3>
+                    <span class="pricing-price" id="pricing">$80</span><span class="pricing-price hide-price"
+                        id="pricing-new">$70</span><span class="pricing-price-small"> /month</span>
+                    <br />
+                    <span class="pricing-price-year" id="pricing-year">($960 / year)</span>
+                    <div class="pricing-switch mt-3">
+                        <span class="text-right active-switch" id="pricing-switch-monthly">Monthly</span>
+                        <span class="divider"></span>
+                        <span class="text-left" id="pricing-switch-yearly">
+                            Yearly
+                        </span>
+                        <script>
+                            let monthlySwitch = document.getElementById("pricing-switch-monthly");
+                            let yearlySwitch = document.getElementById("pricing-switch-yearly");
+                            monthlySwitch.onclick = function () {
+                                monthlySwitch.classList.toggle('active-switch');
+                                yearlySwitch.classList.toggle('active-switch');
+                                if (monthlySwitch.classList.contains('active-switch')) {
+                                    document.getElementById("pricing").classList.remove("strikethrough");
+                                    document.getElementById("pricing-new").classList.add("hide-price");
+                                    document.getElementById("pricing-year").innerText = '($960 / year)';
+                                } else {
+                                    document.getElementById("pricing").classList.add("strikethrough");
+                                    document.getElementById("pricing-new").classList.remove("hide-price");
+                                    document.getElementById("pricing-year").innerText = '($840 / year)';
+                                }
+                            };
+                            yearlySwitch.onclick = function () {
+                                monthlySwitch.classList.toggle('active-switch');
+                                yearlySwitch.classList.toggle('active-switch');
+                                if (monthlySwitch.classList.contains('active-switch')) {
+                                    document.getElementById("pricing").classList.remove("strikethrough");
+                                    document.getElementById("pricing-new").classList.add("hide-price");
+                                    document.getElementById("pricing-year").innerText = '($960/year)';
+                                } else {
+                                    document.getElementById("pricing").classList.add("strikethrough");
+                                    document.getElementById("pricing-new").classList.remove("hide-price");
+                                    document.getElementById("pricing-year").innerText = '($840 / year)';
+                                }
+                            };
+                        </script>
+                    </div>
+                    <br />
+                    <span class="pricing-point">Per user</span>
+                    <br />
+                    <br />
+                    <span class="pricing-point">Unlimited predictions</span>
+                    <br />
+                    <br />
+                    <span class="pricing-point">Bring your own Book of Business</span>
+                </div>
+                <div class="col-xl-4 pricing-card ml-xl-4 mt-3 mt-xl-0">
+                    <h3 class="text-center mb-4">ReFocus Enterprise</h3>
+                    <br />
+                    <span class="enterprise-pricing">Please contact ReFocus for pricing</span>
+                    <br />
+                    <br />
+                    <span class="pricing-point">Per
+                        company</span>
+                    <br />
+                    <br />
+                    <span class="pricing-point">Unlimited predictions</span>
+                    <br />
+                    <br />
+                    <span class="pricing-point">Integrate Book of Business databases</span>
+                    <br />
+                    <br />
+                    <span class="pricing-point">On premises installation</span>
+                </div>
+            </div>
         </div>
     </div>
-    <!--/ about  -->
+    <!--/ prising_area  -->
+
+    <div class="features_area ">
+        <div class="container">
+
+        </div>
+    </div>
 
     <!-- footer start -->
     <footer class="footer">
